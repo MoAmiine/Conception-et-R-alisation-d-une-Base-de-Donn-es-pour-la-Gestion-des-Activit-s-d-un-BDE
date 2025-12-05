@@ -42,3 +42,26 @@ CREATE TABLE Sponsor (
     evenements INT,
     FOREIGN KEY (evenements) REFERENCES evenement(id)
 );ENGINE = INNODB
+
+INSERT INTO etudiant (nom, prenom, email, statut) VALUES
+( 'El Amrani', 'Youssef', 'youssef@example.com', 'Actif'),
+( 'Benzakour', 'Aya', 'aya@example.com', 'Actif'),
+( 'Haddad', 'Rachid', 'rachid@example.com', 'Inactif'),
+( 'Mansouri', 'Salma', 'salma@example.com', 'Actif'),
+( 'Lahmar', 'Othman', 'othman@example.com', 'Actif'),
+( 'Tazi', 'Sara', 'sara@example.com', 'Actif'),
+( 'Benali', 'Ilyas', 'ilyas@example.com', 'Inactif'),
+( 'Khalfi', 'Nadia', 'nadia@example.com', 'Actif'),
+( 'Cherkaoui', 'Amine', 'amine@example.com', 'Actif'),
+( 'Sbai', 'Maryam', 'maryam@example.com', 'Actif');
+
+INSERT INTO bde (nom, prenom, role) VALUES
+('Lahmar', 'Othman', 'Tresorier'),
+('Tazi', 'Sara', 'Secretaire'),
+('Benali', 'Ilyas', 'Communication'),
+('Cherkaoui', 'Amine', 'Organisation'),
+('Sbai', 'Maryam', 'Logistique'),
+('Haddad', 'Rachid', 'Support'),
+('Benzakour', 'Aya', 'Design'),
+( 'Khalfi', 'Nadia', 'Relations externes');
+
